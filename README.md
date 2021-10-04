@@ -1,6 +1,6 @@
 # Nightscout Docker Compose
 
-A docker compose file for quickly starting up Nightscout Web Monitor.
+A docker compose file for quickly starting up [Nightscout Web Monitor](https://github.com/nightscout/cgm-remote-monitor).
 
 ## Installing Nightscout
 
