@@ -10,7 +10,7 @@ A docker compose file for quickly starting up Nightscout Web Monitor.
 
 1. Enter the directory and clone the Nightscount repo.
 
-   `cd nightscout-docker-compose.git`
+   `cd Nightscount-Docker-Compose`
 
    `git clone https://github.com/nightscout/cgm-remote-monitor.git`
 
