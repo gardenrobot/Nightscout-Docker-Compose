@@ -6,7 +6,7 @@ A docker compose file for quickly starting up Nightscout Web Monitor.
 
 1. Clone this repo with
 
-`git clone https://github.com/samclotf/nightscout-docker-compose.git`
+`git clone git@github.com:samclotf/Nightscount-Docker-Compose.git`
 
 1. Enter the directory and clone the Nightscount repo.
 
