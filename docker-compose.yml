@@ -13,18 +13,18 @@ services:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   app:
-    build:
-      context: cgm-remote-monitor
+    build: https://github.com/nightscout/cgm-remote-monitor.git
     environment:
       - API_SECRET=${API_SECRET}
       - MONGODB_URI=mongodb://nsdb:${DB_PASSWORD}@db/nsdb
       - PORT=1337
       - AUTH_DEFAULT_ROLES=denied
-
-      # these are only needed when not behind https proxy
+      # uncomment when using https proxy
+#      - INSECURE_USE_HTTP=false
+#      - SECURE_HSTS_HEADER=true
+      # uncomment when not using https proxy
       - INSECURE_USE_HTTP=true
       - SECURE_HSTS_HEADER=false
-
     restart: unless-stopped
     networks:
       - web
@@ -34,7 +34,7 @@ services:
     env_file:
       - .env
     ports:
-      - 1338:1337
+      - 1337:1337
 
 volumes:
   mongodata:
