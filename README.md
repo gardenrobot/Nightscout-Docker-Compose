@@ -6,7 +6,7 @@ A docker compose file for quickly starting up [Nightscout Web Monitor](https://g
 
 1. Clone this repo.
 
-   `git clone git@github.com:samclotf/Nightscount-Docker-Compose.git`
+   `git clone https://github.com/samclotf/Nightscount-Docker-Compose.git`
 
    `cd Nightscount-Docker-Compose`
 
